@@ -1,152 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brisheet Tours & Travel</title>
-
-  <link rel="stylesheet" href="css/styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisheet Tours & Travel</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png.png" alt="Brisheet Logo">
-    <span>Brisheet Tours & Travel</span>
-  </div>
-
-  <!-- Mobile menu toggle -->
-  <div class="menu-toggle" id="menuToggle">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <nav id="navMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#why">Why Choose Us</a>
-    <a href="#tours">Adventure</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="pages/booking.html">Booking</a>
-    <a href="pages/payment.html">Payment</a>
-    <a href="pages/check-status.html">Check Status</a>
-  </nav>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.png.png" alt="Brisheet Tours Logo">
+        <span>Brisheet Tours & Travel</span>
+    </div>
+    <div class="menu">&#9776;</div>
 </header>
 
-</header>
+<!-- HERO SLIDER -->
+<section class="hero">
 
-<!-- ================= INTRO VIDEO ================= -->
-<section class="intro-video">
-  <video autoplay muted loop>
-    <source src="videos/intro.mp4.mp4" type="video/mp4" />
-  </video>
-  <div class="video-overlay">
-    <h1>Welcome to Brisheet Tours & Travel</h1>
-    <p>Your Gateway to Exploration</p>
-  </div>
-</section>
-
-<!-- ================= HERO ================= -->
-<section class="hero fade-in" id="home">
-  <div class="hero-content">
-    <h1>Explore Uganda With Us</h1>
-    <p>Adventure • Wildlife • Culture</p>
-    <a href="#tours" class="btn">Discover More</a>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="about fade-in" id="about">
-  <h2>About Us</h2>
-  <p>
-    Welcome to Brisheet, your gateway to exploration. We specialize in crafting
-    unforgettable travel experiences tailored just for you.
-  </p>
-
-  <h3>Personalized Experience</h3>
-  <p>
-    At Brisheet, we believe in crafting unique travel experiences tailored to
-    your preferences. Our team works closely with you to design the perfect
-    itinerary.
-  </p>
-</section>
-
-<!-- ================= TOURS ================= -->
-<section class="tours fade-in" id="tours">
-  <h2>Our Popular Adventures</h2>
-
-  <div class="tour-grid">
-    <div class="tour-card">
-      <img src="images/gorilla-1.jpg.jpg" alt="Mountain Gorilla Trekking" />
-      <h3>Mountain Gorilla Trekking</h3>
-      <p>Bwindi Forest – 3 Days</p>
+    <div class="slides active">
+        <img src="images/safari-2.jpg.jpg" alt="Safari Adventure">
+        <div class="hero-text">
+            <h1>Wildlife Adventure Safaris</h1>
+            <p>Your African journey starts here</p>
+            <p>
+                Discover the essence of adventure with WildMiracle Adventure your premier gateway 
+                to the wonders of Tanzania. Whether you’re an intrepid explorer, a nature enthusiast, 
+                or someone seeking serene escapes, we offer experiences that cater to every traveler’s dream. 
+                From the wild landscapes of our renowned safaris to the breathtaking peaks of Mount Kilimanjaro, 
+                the pristine beaches of Zanzibar, and the rich cultural tapestry of local communities, 
+                we ensure every moment is unforgettable. Join us and embark on a journey that promises both 
+                excitement and tranquility, with the beauty of Tanzania as your backdrop. Your adventure starts here!
+            </p>
+            <a href="tour-details.html" class="btn">Explore Safaris</a>
+        </div>
     </div>
 
-    <div class="tour-card">
-      <img src="images/queen-1.jpeg.jpeg" alt="Queen Elizabeth Safari" />
-      <h3>Queen Elizabeth Safari</h3>
-      <p>Queen Elizabeth – 5 Days</p>
+    <div class="slides">
+        <img src="images/bwindi-1.jpeg.jpeg" alt="Bwindi Forest">
+        <div class="hero-text">
+            <h1>Explore East Africa with Brisheet Tours & Travel.</h1>
+            <p>Uganda | Kenya | Tanzania</p>
+        </div>
     </div>
-  </div>
+
+    <div class="slides">
+        <img src="images/gorilla-1.jpg.jpg" alt="Gorilla Trekking">
+        <div class="hero-text">
+            <h1>Experience the Big Five</h1>
+            <p>Join us for an unforgettable safari experience</p>
+        </div>
+    </div>
+
+    <div class="slides">
+        <img src="images/queen-11.jpeg.jpeg" alt="Queen Elizabeth National Park">
+        <div class="hero-text">
+            <h1>Discover the Beauty of Africa</h1>
+            <p>Your adventure awaits with Brisheet Tours & Travel</p>
+        </div>
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
 </section>
 
-<!-- ================= WHY CHOOSE US ================= -->
-<section class="why-choose-us fade-in" id="why">
-  <h2>Why Choose Brisheet?</h2>
-  <ul>
-    <li><strong>Expert Guides</strong> – Knowledgeable and passionate</li>
-    <li><strong>Customized Itineraries</strong> – Tailored just for you</li>
-    <li><strong>Local Connections</strong> – Authentic experiences</li>
-    <li><strong>Sustainability</strong> – Eco-friendly travel</li>
-  </ul>
+<!-- INTRO -->
+<section class="intro">
+    <h2>EXPLORE THE HEART OF AFRICA</h2>
+    <p class="script">With Brisheet Tours & Travel</p>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section class="gallery fade-in" id="gallery">
-  <h2>Our Gallery</h2>
+<!-- SAFARI CARDS -->
+<section class="cards">
 
-  <div class="gallery-grid">
-    <img src="images/safari-2.jpg.jpg" alt="Safari" />
-    <img src="images/gorilla-2.jpg.jpg" alt="Gorilla" />
-    <img src="images/murchison-1.jpeg.jpeg" alt="Murchison Falls" />
-    <img src="images/mburo-1.jpeg.jpeg" alt="Lake Mburo" />
-  </div>
+    <div class="card">
+        <img src="images/queen-11.jpeg.jpeg" alt="Tanzania Safari">
+        <div class="card-content">
+            <h3>Wildlife | Trekking | Beach</h3>
+            <h4>TANZANIA SAFARI</h4>
+            <a href="tour-details.html" class="arrow">↗</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/safari-3.jpg.jpg" alt="Kenya Safari">
+        <div class="card-content">
+            <h3>Wildlife Safari</h3>
+            <h4>KENYA</h4>
+            <a href="tour-details.html" class="arrow">↗</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/gorilla-2.jpg.jpg" alt="Uganda Gorilla Trekking">
+        <div class="card-content">
+            <h3>Gorilla Trekking</h3>
+            <h4>UGANDA</h4>
+            <a href="tour-details.html" class="arrow">↗</a>
+        </div>
+    </div>
+
 </section>
 
-<!-- ================= LIGHTBOX ================= -->
-<div class="lightbox" id="lightbox">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" />
-</div>
+<!-- PACKAGES SECTION -->
+<section class="packages-section">
 
-<!-- ================= CONTACT ================= -->
-<section class="contact fade-in" id="contact">
-  <h2>Contact Us</h2>
+    <h2 class="section-title">Safari Packages</h2>
+    <p class="section-subtitle">Explore our expertly curated Tanzania, Kenya & Uganda safari tours</p>
 
-  <p><strong>Phone:</strong> +211924734469 | +211925475268</p>
-  <p><strong>WhatsApp:</strong> +211981823381</p>
-  <p><strong>Email:</strong> BRISHEETTOURSANDTRAVEL@gmail.com</p>
-  <p><strong>Location:</strong> Airport Rd, Juba South Sudan</p>
+    <div class="package-grid">
 
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+        <h5>TANZANIA SAFARI PACKAGES</h5>
+        <p>
+            Tanzania is home to some of the world’s most iconic wildlife destinations.
+            Our wildlife safaris bring you face-to-face with diverse animals, stunning scenery,
+            and unforgettable natural spectacles. Whether it’s the Great Migration, the Big Five,
+            or rare birds, your safari adventure begins here.
+        </p>
+
+        <div class="package-card">
+            <img src="images/tz-1.jpg" alt="Tanzania Safari">
+            <div class="package-info">
+                <h3>3 Days - Lake Manyara, Ngorongoro & Tarangire Crate & Tarangire</h3>
+                <div class="package-meta">
+                    <span class="duration">3 days</span>
+                    <span class="group-size">12 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/tz-2.jpg" alt="Tanzania Safari">
+            <div class="package-info">
+                <h3>5 Days - Serengeti & Ngorongoro Safari</h3>
+                <div class="package-meta">
+                    <span class="duration">5 days</span>
+                    <span class="group-size">10 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/tz-3.jpg" alt="Tanzania Safari">
+            <div class="package-info">
+                <h3>7 Days - Tanzania Safari & Cultural Tourism</h3>
+                <div class="package-meta">
+                    <span class="duration">7 days</span>
+                    <span class="group-size">10 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <h5>MOUNT KILIMANJARO TREKKING</h5>
+        <p>
+            Mount Kilimanjaro is more than a mountain—it’s a journey of personal triumph. 
+            Trek through changing landscapes, from rainforest to alpine desert to icy summit, 
+            and feel the thrill of standing at 5,895 meters with the world beneath your feet.
+        </p>
+
+        <div class="package-card">
+            <img src="images/kilimanjaro-1.jpg" alt="Kilimanjaro Trekking">
+            <div class="package-info">
+                <h3>5 Days - Kilimanjaro Trekking Via Marangu Route</h3>
+                <div class="package-meta">
+                    <span class="duration">5 days</span>
+                    <span class="group-size">10 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/kilimanjaro-2.jpg" alt="Kilimanjaro Trekking">
+            <div class="package-info">
+                <h3>7 Days - Kilimanjaro Trekking Via Rongai Route</h3>
+                <div class="package-meta">
+                    <span class="duration">7 days</span>
+                    <span class="group-size">8 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/kilimanjaro-3.jpg" alt="Kilimanjaro Trekking">
+            <div class="package-info">
+                <h3>8 Days - Kilimanjaro Trekking Via Shira Route</h3>
+                <div class="package-meta">
+                    <span class="duration">8 days</span>
+                    <span class="group-size">12 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <h5>KENYA SAFARI PACKAGES</h5>
+        <p>
+            Discover the timeless beauty of Kenya, one of Africa’s most iconic safari destinations.
+            From the vast plains of the Maasai Mara to the towering presence of Mount Kilimanjaro in Amboseli, 
+            Kenya promises extraordinary wildlife encounters and breathtaking landscapes at every turn.
+        </p>
+
+        <div class="package-card">
+            <img src="images/kyn-1.jpg" alt="Kenya Safari">
+            <div class="package-info">
+                <h3>7 Days - Tanzania Wildebeest Migaration Mara RRiver Crossing</h3>
+                <div class="package-meta">
+                    <span class="duration">7 days</span>
+                    <span class="group-size">10 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/kyn-2.jpg" alt="Kenya Safari">
+            <div class="package-info">
+                <h3>5 Days - Wildebeest Migration Safari in Kenya</h3>
+                <div class="package-meta">
+                    <span class="duration">5 days</span>
+                    <span class="group-size">8 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/kyn-3.jpg" alt="Kenya Safari">
+            <div class="package-info">
+                <h3>4 Days - Maasai Mara Budget Safari - Group Tour</h3>
+                <div class="package-meta">
+                    <span class="duration">4 days</span>
+                    <span class="group-size">12 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <h5>UGANDA SAFARI PACKAGES</h5>
+        <p>
+            Welcome to Uganda — the Pearl of Africa, a land of breathtaking green landscapes,
+            rare wildlife encounters, and some of the most meaningful safari experiences in East Africa.
+            At Wild Miracle Adventure, our Uganda safari packages are crafted for travelers who want 
+            something deeper, more intimate, and truly unforgettable.
+        </p>
+
+        <div class="package-card">
+            <img src="images/ug-1.jpg" alt="Uganda Safari">
+            <div class="package-info">
+                <h3>3 Days - Gorilla Trekking Safari - Bwindi Impenetrable Forest</h3>
+                <div class="package-meta">
+                    <span class="duration">3 days</span>
+                    <span class="group-size">8 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="images/ug-2.jpg" alt="Uganda Safari">
+            <div class="package-info">
+                <h3>5 Days - Wildlife & Chimpanzees Safari - Queen Elizabeth & Kibale</h3>
+                <div class="package-meta">
+                    <span class="duration">5 days</span>
+                    <span class="group-size">10 people</span>
+                </div>
+                <a href="tour-details.html" class="btn-small">Explore →</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>© 2025 Brisheet Tours & Travel. All rights reserved.</p>
-</footer>
+<!-- WHATSAPP CHAT -->
+<a href="https://wa.me/256700000000" class="whatsapp">
+    <img src="images/whatsapp.png" alt="WhatsApp Chat">
+</a>
 
-<script src="js/scripts.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
